@@ -1,0 +1,13 @@
+FROM ubuntu:20.04
+
+LABEL mainteiner = "LUPITA ESPINOZA"
+LABEL version = "v1"
+LABEL description = "BD SQLITE3"
+
+RUN apt-get update
+
+RUN apt-get install -y php-fpm
+RUN apt-get install -y php-sqlite3 
+RUN apt-get install -y sqlite3
+
+EXPOSE 8080
